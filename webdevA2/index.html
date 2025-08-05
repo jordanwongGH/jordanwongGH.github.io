@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Baked Goods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🥖 The World Of Baked Goods</h1>
+            <div class="nav-menu" id="nav-menu">
+                <button class="nav-btn active" data-page="home">Home</button>
+                <button class="nav-btn" data-page="pastries">Pastries</button>
+                <button class="nav-btn" data-page="breads">Breads</button>
+                <button class="nav-btn" data-page="cakes">Cakes</button>
+                <button class="nav-btn" data-page="game">Mini Game</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- QR Code for Desktop -->
+    <div class="qr-code" id="qr-code">
+        <img src="images/qr-code.png" alt="QR Code">
+        <p>Scan to view on mobile</p>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <section class="page active" id="home">
+            <div class="hero">
+                <h2>Welcome to the World of Baked Goods</h2>
+                <p>Discover the art and science behind your favorite baked treats. From flaky pastries to hearty breads, learn about the techniques and traditions that make each bite special.</p>
+                <div class="feature-cards">
+                    <div class="card">
+                        <div class="card-icon">🥐</div>
+                        <h3>Pastries</h3>
+                        <p>Explore delicate pastries with layers of butter and dough</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🍞</div>
+                        <h3>Breads</h3>
+                        <p>Learn about different bread types and baking techniques</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎂</div>
+                        <h3>Cakes</h3>
+                        <p>Discover the sweet world of cakes and frosting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastries Page -->
+        <section class="page" id="pastries">
+            <div class="content">
+                <h2>Pastries: The Art of Layers</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>Pastries are baked goods made with ingredients such as flour, sugar, milk, butter, shortening, baking powder, and eggs. The key to great pastries lies in the technique of creating layers.</p>
+                        
+                        <h3>Types of Pastries:</h3>
+                        <div class="pastry-types">
+                            <div class="pastry-item">
+                                <h4>Puff Pastry</h4>
+                                <p>Made with layers of butter and dough, creates a light, flaky texture when baked.</p>
+                            </div>
+                            <img src="images/puff_pastry.jpg" alt="Puff pastry" class="content-image">
+                            <div class="pastry-item">
+                                <h4>Choux Pastry</h4>
+                                <p>A light pastry dough used to make éclairs, profiteroles, and cream puffs.</p>
+                            </div>
+                            <img src="images/choux_pastry.jpg" alt="Choux pastry" class="content-image">
+                            <div class="pastry-item">
+                                <h4>Shortcrust Pastry</h4>
+                                <p>A basic pastry used for pies and tarts, made with flour, fat, and water.</p>
+                            </div>
+                            <img src="images/shortcrust_pastry.jpg" alt="shortcrust_pastry" class="content-image">
+                        </div>
+                    </div>
+                    <div class="content-media">
+                        <img src="images/pastries.jpg" alt="Various pastries" class="content-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breads Page -->
+        <section class="page" id="breads">
+            <div class="content">
+                <h2>Breads: The Foundation of Baking</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>Bread is a staple food prepared by baking dough made from flour and water. The process of bread making involves fermentation, which gives bread its distinctive flavor and texture.</p>
+                        
+                        <h3>Bread Categories:</h3>
+                        <div class="bread-types">
+                            <div class="bread-item">
+                                <h4>Yeast Breads</h4>
+                                <p>Risen breads that use yeast as a leavening agent, including white bread, whole wheat, and sourdough.</p>
+                            </div>
+                            <img src="images/yeast_bread.jpg" alt="Yeast bread" class="content-image">
+                            <div class="bread-item">
+                                <h4>Quick Breads</h4>
+                                <p>Breads that use baking powder or soda instead of yeast, like banana bread and muffins.</p>
+                            </div>
+                            <img src="images/quick_bread.jpg" alt="Quick bread" class="content-image">
+                            <div class="bread-item">
+                                <h4>Flatbreads</h4>
+                                <p>Unleavened breads that are rolled flat, such as tortillas, naan, and pita bread.</p>
+                            </div>
+                            <img src="images/flatbread.jpg" alt="Flatbread" class="content-image">
+                        </div>
+                    </div>
+                    <div class="content-media">
+                        <img src="images/breads.jpg" alt="Various breads" class="content-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cakes Page -->
+        <section class="page" id="cakes">
+            <div class="content">
+                <h2>Cakes: Sweet Celebrations</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>Cakes are sweet baked goods typically made with flour, sugar, eggs, and butter. They're often decorated with frosting and used for celebrations and special occasions.</p>
+                        
+                        <h3>Cake Varieties:</h3>
+                        <div class="cake-types">
+                            <div class="cake-item">
+                                <h4>Sponge Cakes</h4>
+                                <p>Light, airy cakes made with eggs, sugar, and flour. Perfect for layering with cream and fruit.</p>
+                            </div>
+                            <img src="images/sponge_cake.jpg" alt="Sponge cake" class="content-image">
+                            <div class="cake-item">
+                                <h4>Butter Cakes</h4>
+                                <p>Rich, dense cakes made with butter, including pound cake and yellow cake.</p>
+                            </div>
+                            <img src="images/butter_cake.jpg" alt="Butter cake" class="content-image">
+                            <div class="cake-item">
+                                <h4>Foam Cakes</h4>
+                                <p>Cakes leavened by beaten eggs, such as angel food cake and chiffon cake.</p>
+                            </div>
+                            <img src="images/foam_cake.jpg" alt="Foam cake" class="content-image">
+                        </div>
+                    </div>
+                    <div class="content-media">
+                        <img src="images/cakes.jpg" alt="Various cakes" class="content-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Game Page -->
+        <section class="page" id="game">
+            <div class="content">
+                <h2>Baked Goods Memory Game</h2>
+                
+                <div class="game-container">
+                    <div class="game-score">
+                        <span>Score: <span id="score">0</span></span>
+                        <span>Moves: <span id="moves">0</span></span>
+                        <span>Time: <span id="timer">0</span>s</span>
+                    </div>
+                    
+                    <div class="game-board" id="game-board">
+                        <!-- Memory game cards will be generated by JavaScript -->
+                    </div>
+                    
+                    <div class="game-controls">
+                        <button id="start-game" class="game-btn">Start Game</button>
+                        <button id="reset-game" class="game-btn">Reset</button>
+                    </div>
+                    
+                    <div class="game-message" id="game-message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
