@@ -390,28 +390,6 @@ function adjustGameBoard() {
     }
 }
 
-// Audio handling
-function initializeAudio() {
-    var audioPlayers = document.querySelectorAll('.audio-player');
-    
-    for (var i = 0; i < audioPlayers.length; i++) {
-        addAudioListener(audioPlayers[i]);
-    }
-}
-
-function addAudioListener(player) {
-    // Add event listeners for audio events
-    player.addEventListener('loadstart', function() {
-        console.log('Audio loading started');
-    });
-    
-    player.addEventListener('error', function() {
-        console.log('Audio failed to load');
-        // Hide the audio player if it fails to load
-        player.style.display = 'none';
-    });
-}
-
 // Timed events for animations
 function addTimedAnimations() {
     // Animate cards on page load
@@ -579,4 +557,5 @@ function initializeTouchEvents() {
 // Initialize additional features
 setTimeout(function() {
     initializeTouchEvents();
+
 }, 1000);
